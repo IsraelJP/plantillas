@@ -13,9 +13,18 @@ export default function Home() {
           />
         </div>
       </header>
-      <main className="flex-1">
-        <div className="flex justify-center items-center pt-29 ">
-          <form className="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <main className="flex-1 justify-center items-center p-29">
+        <div className="flex justify-center items-center  space-x-10">
+          
+          <Image
+            src="/cereales.jpg"
+            alt="Logo"
+            width={500}
+            height={700}
+            className='rounded-lg shadow-lg'
+          />
+      
+          <form className="bg-gray-100 shadow-md rounded px-8  pb-8 mb-4">
             <h1 className="text-3xl font-bold mb-4">Iniciar Sesion</h1>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
