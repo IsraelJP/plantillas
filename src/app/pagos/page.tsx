@@ -7,16 +7,7 @@ export default function PaymentSection() {
   
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      <header className="bg-yellow-200 w-full h-20 flex items-center justify-center">
-        <div>
-          <Image
-            src="/logo-encabeza.png"
-            alt="Logo"
-            width={100}
-            height={100}
-          />
-        </div>
-      </header>
+
       
       <main className="flex-1">
         <div className="flex justify-center items-center pt-10">
@@ -158,9 +149,7 @@ export default function PaymentSection() {
         </div>
       </main>
       
-      <footer className="bg-yellow-200 w-full h-20 flex items-center justify-center mt-10">
-        <p className="text-gray-700 text-sm">© 2024 Mi Empresa. Todos los derechos reservados.</p>
-      </footer>
+
     </div>
   );
 }
