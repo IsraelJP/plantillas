@@ -292,9 +292,7 @@ export default function SalesHistory() {
         </div>
       </main>
       
-      <footer className="bg-yellow-200 w-full h-20 flex items-center justify-center mt-10">
-        <p className="text-gray-700 text-sm">© 2024 Mi Empresa. Todos los derechos reservados.</p>
-      </footer>
+
     </div>
   );
 }
