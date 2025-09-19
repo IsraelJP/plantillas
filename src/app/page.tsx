@@ -1,11 +1,13 @@
 'use client';
 import Image from 'next/image';
-import { use, useState } from 'react';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const router = useRouter();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -14,6 +16,7 @@ export default function Home() {
     } else {
       setError('');
       // Aquí puedes manejar el inicio de sesión real
+      router.push('/portal');
     }
   };
 
