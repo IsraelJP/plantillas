@@ -5,6 +5,7 @@ import Catalogo from '../catalogo/catalogo';
 import PaymentSection from '../pagos/page';
 import Cancelaciones from '../cancelaciones/cancelaciones';
 import Configuracion from '../configuracion/config';
+import Reportes from '../reportes/repo';
 
 export default function Home() {
   const [selected, setSelected] = useState('Catálogo');
@@ -18,7 +19,7 @@ export default function Home() {
       case 'Ventas':
         return <div className="p-8">Ventas</div>;
       case 'Reportes':
-        return <div className="p-8">Reportes</div>;
+        return <Reportes />;
       case 'Cancelaciones':
         return <Cancelaciones />;
       case 'Configuración':
